@@ -28,7 +28,7 @@ export const Signup = () => {
   const handleSignUp = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://arba-backend-1.onrender.com/user/signup", {
+      const response = await fetch("https://tame-tan-coyote-boot.cyclic.app/user/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

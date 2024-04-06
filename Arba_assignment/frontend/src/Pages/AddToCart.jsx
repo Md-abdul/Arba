@@ -36,7 +36,6 @@ export const AddToCart = () => {
               <img src={item.image} alt={item.name} />
               <p>Name: {item.name}</p>
               <p>Price: {item.price}</p>
-              {/* Add more details if needed */}
             </li>
           ))}
         </ul>

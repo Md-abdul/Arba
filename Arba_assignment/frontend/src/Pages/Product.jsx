@@ -27,7 +27,7 @@ export const Product = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch("https://arba-backend-1.onrender.com/product/get");
+      const response = await fetch("https://tame-tan-coyote-boot.cyclic.app/product/get");
       if (!response.ok) {
         throw new Error("Failed to fetch products");
       }
@@ -57,8 +57,8 @@ export const Product = () => {
   const handleSaveEdit = async (productId, updatedData) => {
     try {
       const response = await fetch(
-        `https://arba-backend-1.onrender.com/product/update/${productId}`,
-        //http://localhost:3020/product/update/660eaf653cc94bac61f3c5fb
+        `https://tame-tan-coyote-boot.cyclic.app/product/update/${productId}`,
+        //https://tame-tan-coyote-boot.cyclic.app/product/
         {
           method: "PATCH",
           headers: {
@@ -87,7 +87,7 @@ export const Product = () => {
   const handleDelete = async (productId) => {
     try {
       const response = await fetch(
-        `https://arba-backend-1.onrender.com/product/delete/${productId}`,
+        `https://tame-tan-coyote-boot.cyclic.app/product/delete/${productId}`,
         {
           method: "DELETE",
         }

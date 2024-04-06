@@ -28,7 +28,7 @@ const AddProduct = ({ onAdd }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://arba-backend-1.onrender.com/product/postproduct', {
+      const response = await fetch('https://tame-tan-coyote-boot.cyclic.app/product/postproduct', {
         //https://arba-backend-1.onrender.com/
         method: 'POST',
         headers: {

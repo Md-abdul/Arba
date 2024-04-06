@@ -72,7 +72,7 @@ export const Navbar = () => {
                     <Link to="/store">My Store</Link>
                   </MenuItem>
                   <MenuItem>
-                    <Link to="/profile">My Store</Link>
+                    <Link to="/profile">Profile</Link>
                   </MenuItem>
                   <MenuItem>
                     <Link to="/login">Login</Link>

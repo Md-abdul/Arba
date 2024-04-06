@@ -5,15 +5,14 @@ import { Box, Center, Flex, Text } from "@chakra-ui/react";
 
 export const Profile = () => {
   const [userData, setUserData] = useState(null);
-  const [loading, setLoading] = useState(true); // Add loading state
+  const [loading, setLoading] = useState(true); 
 
   useEffect(() => {
-    // Retrieve token from localStorage
     const token = localStorage.getItem("token");
 
     const fetchUserData = async () => {
       try {
-        const response = await fetch("https://arba-backend-1.onrender.com/user/singleusers", {
+        const response = await fetch("https://tame-tan-coyote-boot.cyclic.app/user/singleusers", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
