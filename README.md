@@ -1,4 +1,6 @@
 Deploy link - https://reliable-lamington-25e17b.netlify.app/
+
+
 The Online Shop is a full-stack web application that allows users to browse, purchase, and manage products. It provides essential functionalities such as user authentication, product management, and user profile management.
 
 ## Functionalities
@@ -17,6 +19,45 @@ The Online Shop is a full-stack web application that allows users to browse, pur
 - **Mongoose**: An Object Data Modeling (ODM) library for MongoDB and Node.js, providing a straight-forward, schema-based solution to model application data.
 - **MongoDB**: A NoSQL database that uses a document-oriented data model, storing data in flexible, JSON-like documents.
 
+## Backend API Endpoints
+
+### User Authentication
+
+- **Login**:
+  - Method: POST
+  - Endpoint: `/user/login`
+  - Description: Allows users to log in securely by providing their credentials (email and password).
+
+- **Signup**:
+  - Method: POST
+  - Endpoint: `/user/signup`
+  - Description: Enables new users to create an account by providing necessary information like username, email, and password.
+
+### User Profile
+
+- **Get Single User**:
+  - Method: GET
+  - Endpoint: `/user/singleusers`
+  - Description: Retrieves details of a single user based on their ID or any unique identifier.
+
+- **Update User Profile**:
+  - Method: PUT
+  - Endpoint: `/user/profile/update`
+  - Description: Allows users to update their profile information such as username, email, or profile picture.
+
+### Product Management
+
+- **Get Products**:
+  - Method: GET
+  - Endpoint: `/product/get`
+  - Description: Retrieves a list of products available in the online shop.
+
+- **Add Product**:
+  - Method: POST
+  - Endpoint: `/product/postproduct`
+  - Description: Allows administrators or authorized users to add new products to the shop.
+
+  
 ### Frontend
 
 - **React**: A JavaScript library for building user interfaces, enabling the creation of interactive UIs efficiently.
@@ -47,6 +88,7 @@ Once the application is up and running, users can sign up or log in to their acc
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute to the project, please follow the standard GitHub flow: fork the repository, create a new branch, make your changes, and submit a pull request.
+
 
 ## License
 
