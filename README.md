@@ -56,6 +56,17 @@ The Online Shop is a full-stack web application that allows users to browse, pur
   - Method: POST
   - Endpoint: `/product/postproduct`
   - Description: Allows administrators or authorized users to add new products to the shop.
+ 
+- **Update Product**:
+  - Method: PUT
+  - Endpoint: `/product/update/:id`
+  - Description: Enables administrators or authorized users to update the details of a specific product identified by its ID.
+
+- **Delete Product**:
+  - Method: DELETE
+  - Endpoint: `/product/delete/:id`
+  - Description: Allows administrators or authorized users to delete a product from the shop based on its ID.
+    
 
   
 ### Frontend
