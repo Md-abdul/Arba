@@ -1,5 +1,3 @@
-Deploy link - https://reliable-lamington-25e17b.netlify.app/
-
 
 The Online Shop is a full-stack web application that allows users to browse, purchase, and manage products. It provides essential functionalities such as user authentication, product management, and user profile management.
 
