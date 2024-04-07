@@ -17,6 +17,7 @@ import { FaEdit, FaTrash,FaTimes } from "react-icons/fa";
 import { IoMdDoneAll } from "react-icons/io";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Link } from "react-router-dom";
 
 export const Product = () => {
   const [products, setProducts] = useState([]);
@@ -122,7 +123,9 @@ export const Product = () => {
       backgroundColor="#f0f0f0"
       padding="20px"
     >
-      <Table variant="striped" colorScheme="teal" width="80%">
+      {/* <Button p={2} backgroundColor={'red'}>Add Category</Button> */}
+      <Link to='/addproduct'><Button p={2} backgroundColor={'red'}>Add Category</Button></Link>
+      <Table variant="striped" colorScheme="teal" width="80%" mt={5}>
         <Thead>
           <Tr>
             <Th>Image</Th>
@@ -132,6 +135,7 @@ export const Product = () => {
             <Th>Action</Th>
           </Tr>
         </Thead>
+        
         <Tbody>
           {products.map((product) => (
             <Tr key={product._id}>

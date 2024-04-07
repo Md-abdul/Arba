@@ -10,6 +10,7 @@ import { Product } from "../Pages/Product";
 import AddProduct from "../Pages/AddProduct";
 // import { AddToCart } from "../Pages/AddToCart";
 import PrivateRoutes from "./PrivateRoutes";
+import { AddCategory } from "../Pages/AddCategory";
 export const AllRoutes = () => {
   return (
     <>
@@ -23,6 +24,7 @@ export const AllRoutes = () => {
         <Route path="/category" element={<PrivateRoutes><Category /></PrivateRoutes>} />
         <Route path="/product" element={<PrivateRoutes><Product /></PrivateRoutes>} />
         <Route path="/addproduct" element={<AddProduct/>}/>
+        <Route path="/addcategory" element={<AddCategory/>}/>
       </Routes>
     </>
   );

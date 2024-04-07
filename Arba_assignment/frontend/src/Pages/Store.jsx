@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { Category } from "./Category"; 
 import { Product } from "./Product"; 
 import { Button, Flex } from "@chakra-ui/react";
-import AddProduct from "./AddProduct";
+// import AddProduct from "./AddProduct";
 
 export const Store = () => {
   const [selectedTab, setSelectedTab] = useState("products");
@@ -24,21 +24,21 @@ export const Store = () => {
           style={{backgroundColor:'teal',}}
           onClick={() => handleTabChange("categories")}
         >
-          View Categories
+          View Products
         </Button>
         <Button
           p={3} fontSize={'xl'}
           style={{backgroundColor:'teal',}} borderRadius={20}
           onClick={() => handleTabChange("products")}
         >
-          View Products
+          View Categories
         </Button>
       </Flex>
 
-      <Button style={{backgroundColor:'teal',}} borderRadius={20} p={2} onClick={() => handleTabChange('addproduct')}>Add Product</Button>
+      {/* <Button style={{backgroundColor:'teal',}} borderRadius={20} p={2} onClick={() => handleTabChange('addproduct')}>Add Product</Button> */}
       {selectedTab === "categories" && <Category />}
       {selectedTab === "products" && <Product />}
-      {selectedTab === "addproduct" && <AddProduct />}
+      {/* {selectedTab === "addproduct" && <AddProduct />} */}
     </div>
   );
 };

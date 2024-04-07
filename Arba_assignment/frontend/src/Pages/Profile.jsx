@@ -54,7 +54,7 @@ export const Profile = () => {
               <Flex>
                 <Box borderRadius="full" overflow="hidden">
                   <img
-                    src="https://static.vecteezy.com/system/resources/previews/030/690/466/non_2x/office-worker-2d-cartoon-illustraton-on-white-background-h-free-photo.jpg"
+                    src={userData.avatar}
                     alt=""
                     style={{width:'10rem'}}
                   />
